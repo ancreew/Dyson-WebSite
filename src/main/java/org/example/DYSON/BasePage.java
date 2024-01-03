@@ -50,6 +50,7 @@ public class BasePage {
     }
 
 
+
     public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element);
