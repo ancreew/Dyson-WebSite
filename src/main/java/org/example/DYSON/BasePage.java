@@ -49,6 +49,9 @@ public class BasePage {
         js.executeScript("window.scrollBy(0," + pixels + ")", "");
     }
 
+
+
+
     public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", element);

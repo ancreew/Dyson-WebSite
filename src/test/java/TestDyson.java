@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 
@@ -66,12 +67,12 @@ public class TestDyson extends TestInit {
     }
 
     @Test
-    public void testFind () {
+    public void testFind() {
         dysonURL.goToHomePage();
         dysonFinding.addSearch();
         findResult.resultOfFind();
 
         Assert.assertTrue(findResult.resultOfFind().objectOfResult().isDisplayed());
-}
+    }
 }
 
