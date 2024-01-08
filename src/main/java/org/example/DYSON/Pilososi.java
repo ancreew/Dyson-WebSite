@@ -11,9 +11,9 @@ public class Pilososi extends BasePage {
     public WebElement tovar () {
         return findByXpath("(//div[@class='catalogCard-title'])[1]");
     }
+
     public DysonV15 clickTov15 () {
         tovar().click();
         return new DysonV15(driver);
     }
-
 }

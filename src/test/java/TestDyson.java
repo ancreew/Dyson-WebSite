@@ -54,7 +54,7 @@ public class TestDyson extends TestInit {
                 .addPassword()
                 .goToAccaunt()
                 .goToPersonalDate();
-        //   Assert.assertTrue(dysonAccount.textInAcc().isDisplayed());
+
         Assert.assertTrue(dysonAccount.textInAcc().getText().contains("Особисті дані"));
     }
 
